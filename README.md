@@ -1,4 +1,4 @@
-pransapps
-=========
+A simple jni remote service
+===========================
 
-school stuff
+A simple jni based remote http server as service and its client
