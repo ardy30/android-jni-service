@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#22292826"
+    tools:context="com.prs.kw.natser.servercontrol.Control" >
+
+    <EditText
+        android:id="@+id/port_et"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:shadowRadius="4"
+        android:shadowColor="#dfdfdf"
+        android:inputType="number" />
+    
+    <TextView
+        android:id="@+id/label_tv"
+        android:layout_above="@id/port_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Enter port number" />
+
+    <Button
+        android:id="@+id/ctrl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/port_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textScaleX="1.2"
+        android:text="Start/Stop Server" />
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctrl_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Stopped"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:text="Device IP: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
